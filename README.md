@@ -97,3 +97,53 @@ Modifying protected files will result in automatic academic integrity violation
 Implementation (70%): Function correctness, file operations, error handling
 
 Interview (30%): Code explanation and live coding challenge
+
+
+# UPDATED DOCUMENTATION
+
+1. Game Concept
+
+This project is a basic text-based RPG character creation and story progression system.
+In this, players can create a character from one of four classes — Warrior, Mage, Rogue, or Cleric — each with unique starting stats and level-up progression. The program allows saving and loading characters to/from text files.
+
+2. Design Choices
+
+Stat Formulas:
+
+Warrior: High strength, low magic, high health
+
+Mage: Low strength, high magic, medium health
+
+Rogue: Medium strength, medium magic, low health
+
+Cleric: Medium strength, high magic, high health
+
+The stats scale with level in calculate_stats() and are recalculated in level_up() to simulate character growth.
+
+The code only uses file commands; open(), write(), read(), and functions to comply with project constraints.
+
+3. Bonus / Creative Features
+
+Created a level-up system that updates stats automatically.
+
+Can handle special characters in names (UTF-8 compatible).
+
+Optional: added a starting equipment dictionary per class for potential future gameplay.
+
+4. AI Usage
+
+Used AI (ChatGPT) to:
+
+Refactor file I/O to attempt to pass automated tests without using exceptions.
+
+Ensure load_character() and save_character() use only basic Python file commands.
+
+Debug edge cases, including special character names and multiple level-ups.
+
+5. How to Run
+
+Open terminal or command prompt.
+
+Navigate to the project directory.
+
+Run project1_starter.py in Python 3:
